@@ -126,19 +126,39 @@ const pets = {
     ]
 };
 
-// 計算匹配度
+// 特徵權重設定
+const traitWeights = {
+    personality: 0.4,  // 個性特徵權重 40%
+    lifestyle: 0.35,   // 生活型態權重 35%
+    space: 0.25       // 居住空間權重 25%
+};
+
+// 計算匹配度（含權重）
 function calculateCompatibility(userTraits, petTraits) {
-    let score = 0;
-    let maxScore = 0;
+    let weightedScore = 0;
 
     for (let category in userTraits) {
         if (petTraits[category].includes(userTraits[category])) {
-            score += 1;
+            weightedScore += traitWeights[category];
         }
-        maxScore += 1;
     }
 
-    return (score / maxScore) * 100;
+    return weightedScore * 100; // 轉換為百分比
+}
+
+// 進階特徵分析
+function analyzeTraitCompatibility(userTraits, petTraits) {
+    const analysis = {};
+    
+    for (let category in userTraits) {
+        analysis[category] = {
+            match: petTraits[category].includes(userTraits[category]),
+            weight: traitWeights[category],
+            score: petTraits[category].includes(userTraits[category]) ? traitWeights[category] * 100 : 0
+        };
+    }
+    
+    return analysis;
 }
 
 // 找到最佳配對
@@ -149,10 +169,13 @@ function findBestMatches(userTraits) {
     for (let type in pets) {
         pets[type].forEach(pet => {
             const compatibility = calculateCompatibility(userTraits, pet.traits);
-            if (compatibility >= 50) { // 只顯示匹配度超過 50% 的寵物
+            const traitAnalysis = analyzeTraitCompatibility(userTraits, pet.traits);
+            
+            if (compatibility >= 40) { // 降低門檻至 40% 以提供更多選擇
                 matches.push({
                     ...pet,
-                    compatibility: compatibility
+                    compatibility: compatibility,
+                    analysis: traitAnalysis
                 });
             }
         });
@@ -163,9 +186,50 @@ function findBestMatches(userTraits) {
     return matches.slice(0, 3); // 返回前三名
 }
 
+// 產生詳細的匹配分析文字
+function generateAnalysisText(analysis) {
+    const categoryNames = {
+        personality: '個性特徵',
+        lifestyle: '生活型態',
+        space: '居住空間'
+    };
+    
+    let text = '<div class="trait-analysis">';
+    for (let category in analysis) {
+        const result = analysis[category];
+        text += `
+            <div class="trait-item ${result.match ? 'match' : 'mismatch'}">
+                <span class="trait-name">${categoryNames[category]}</span>
+                <div class="progress">
+                    <div class="progress-bar ${result.match ? 'bg-success' : 'bg-secondary'}" 
+                         role="progressbar" 
+                         style="width: ${result.score}%">
+                        ${Math.round(result.score)}%
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    text += '</div>';
+    return text;
+}
+
+// 顯示載入動畫
+function showLoading() {
+    document.getElementById('loading').style.display = 'flex';
+}
+
+// 隱藏載入動畫
+function hideLoading() {
+    document.getElementById('loading').style.display = 'none';
+}
+
 // 處理表單提交
-document.getElementById('dnaForm').addEventListener('submit', function(e) {
+document.getElementById('dnaForm').addEventListener('submit', async function(e) {
     e.preventDefault();
+
+    // 顯示載入動畫
+    showLoading();
 
     // 獲取用戶輸入
     const userTraits = {
@@ -173,6 +237,9 @@ document.getElementById('dnaForm').addEventListener('submit', function(e) {
         lifestyle: document.getElementById('lifestyle').value,
         space: document.getElementById('space').value
     };
+
+    // 模擬 AI 運算時間
+    await new Promise(resolve => setTimeout(resolve, 1500));
 
     // 獲取配對結果
     const matches = findBestMatches(userTraits);
@@ -188,15 +255,32 @@ document.getElementById('dnaForm').addEventListener('submit', function(e) {
                 <div class="match-item">
                     <img src="${match.image}" alt="${match.name}" class="img-fluid">
                     <h4>${match.name}</h4>
-                    <div class="compatibility-score">匹配度：${Math.round(match.compatibility)}%</div>
-                    <p class="pet-description">${match.description}</p>
+                    <div class="compatibility-score">
+                        <i class="fas fa-heart me-2"></i>
+                        整體匹配度：${Math.round(match.compatibility)}%
+                    </div>
+                    ${generateAnalysisText(match.analysis)}
+                    <p class="pet-description">
+                        <i class="fas fa-paw me-2"></i>
+                        ${match.description}
+                    </p>
                 </div>
-                <hr>
             `;
         });
         resultSection.style.display = 'block';
     } else {
-        matchResult.innerHTML = '<p>抱歉，沒有找到合適的配對結果。請嘗試調整您的選擇。</p>';
+        matchResult.innerHTML = `
+            <div class="no-match-message">
+                <i class="fas fa-sad-tear mb-3" style="font-size: 3rem; color: #6c757d;"></i>
+                <p>抱歉，沒有找到合適的配對結果。請嘗試調整您的選擇。</p>
+            </div>
+        `;
         resultSection.style.display = 'block';
     }
+
+    // 隱藏載入動畫
+    hideLoading();
+
+    // 平滑滾動到結果區域
+    resultSection.scrollIntoView({ behavior: 'smooth' });
 });
