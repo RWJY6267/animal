@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DNA 寵物配對系統</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">AI DNA 寵物配對系統</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">請填寫您的DNA特徵</h5>
+                        <form id="dnaForm">
+                            <div class="mb-3">
+                                <label for="personality" class="form-label">個性特徵</label>
+                                <select class="form-select" id="personality" required>
+                                    <option value="">請選擇...</option>
+                                    <option value="active">活潑外向</option>
+                                    <option value="calm">安靜內向</option>
+                                    <option value="friendly">友善親人</option>
+                                    <option value="independent">獨立自主</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lifestyle" class="form-label">生活型態</label>
+                                <select class="form-select" id="lifestyle" required>
+                                    <option value="">請選擇...</option>
+                                    <option value="busy">繁忙工作</option>
+                                    <option value="relaxed">規律生活</option>
+                                    <option value="outdoor">熱愛戶外</option>
+                                    <option value="indoor">居家型態</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="space" class="form-label">居住空間</label>
+                                <select class="form-select" id="space" required>
+                                    <option value="">請選擇...</option>
+                                    <option value="apartment">公寓</option>
+                                    <option value="house">獨立住宅</option>
+                                    <option value="small">小坪數</option>
+                                    <option value="large">大空間</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">開始配對</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4" id="resultSection" style="display: none;">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">您的最佳寵物配對結果</h5>
+                        <div id="matchResult" class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
