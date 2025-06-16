@@ -211,3 +211,53 @@ body {
         transform: translateY(0);
     }
 }
+
+/* 照護指南樣式 */
+.care-guide {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.care-guide-title {
+    color: #4a90e2;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.care-guide-content {
+    display: grid;
+    gap: 1rem;
+}
+
+.care-item {
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.care-item:hover {
+    transform: translateY(-2px);
+}
+
+.care-item i {
+    color: #4a90e2;
+}
+
+.care-item strong {
+    color: #495057;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .care-guide {
+        padding: 1rem;
+    }
+    
+    .care-item {
+        padding: 0.6rem;
+    }
+}
