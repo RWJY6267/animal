@@ -6,7 +6,8 @@ const pets = {
             traits: {
                 personality: ['active', 'friendly', 'playful', 'social', 'intelligent'],
                 lifestyle: ['outdoor', 'athletic', 'family', 'social'],
-                space: ['house', 'large', 'garden', 'compound']
+                space: ['house', 'large', 'garden', 'compound'],
+                careTime: ['adequate', 'extensive']
             },
             image: 'https://images.pexels.com/photos/1118785/pexels-photo-1118785.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '充滿活力、友善的家庭犬，適合有大空間的家庭。',
@@ -23,7 +24,8 @@ const pets = {
             traits: {
                 personality: ['independent', 'protective', 'intelligent', 'curious'],
                 lifestyle: ['indoor', 'relaxed', 'wfh', 'family'],
-                space: ['apartment', 'small', 'balcony', 'city']
+                space: ['apartment', 'small', 'balcony', 'city'],
+                careTime: ['moderate', 'adequate']
             },
             image: 'https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '忠誠獨立，適應力強，適合公寓生活。',
@@ -40,7 +42,8 @@ const pets = {
             traits: {
                 personality: ['playful', 'social', 'protective'],
                 lifestyle: ['indoor', 'wfh', 'family', 'night'],
-                space: ['apartment', 'small', 'studio', 'city']
+                space: ['apartment', 'small', 'studio', 'city'],
+                careTime: ['minimal', 'moderate']
             },
             image: 'https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '體型小巧、活潑可愛，適合居住在公寓的寵物犬，非常適合陪伴型的生活方式。',
@@ -57,7 +60,8 @@ const pets = {
             traits: {
                 personality: ['friendly', 'gentle', 'intelligent', 'social'],
                 lifestyle: ['outdoor', 'family', 'athletic', 'social'],
-                space: ['house', 'large', 'garden', 'rural']
+                space: ['house', 'large', 'garden', 'rural'],
+                careTime: ['adequate', 'extensive']
             },
             image: 'https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '智商高、親人友善，最適合有孩子的家庭，需要較大的活動空間。',
@@ -74,7 +78,8 @@ const pets = {
             traits: {
                 personality: ['curious', 'playful', 'protective'],
                 lifestyle: ['indoor', 'relaxed', 'wfh', 'family'],
-                space: ['apartment', 'small', 'balcony', 'city']
+                space: ['apartment', 'small', 'balcony', 'city'],
+                careTime: ['minimal', 'moderate']
             },
             image: 'https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '體型小巧但性格獨立，適應力強，適合公寓生活，不需要太大的活動空間。',
@@ -91,7 +96,8 @@ const pets = {
             traits: {
                 personality: ['active', 'curious', 'playful', 'social'],
                 lifestyle: ['outdoor', 'athletic', 'travel', 'busy'],
-                space: ['house', 'large', 'garden', 'rural']
+                space: ['house', 'large', 'garden', 'rural'],
+                careTime: ['extensive']
             },
             image: 'https://images.pexels.com/photos/3715587/pexels-photo-3715587.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '精力充沛、活潑好動，需要大量運動，適合有大院子的家庭。',
@@ -108,7 +114,8 @@ const pets = {
             traits: {
                 personality: ['intelligent', 'active', 'social', 'protective'],
                 lifestyle: ['outdoor', 'athletic', 'family', 'social'],
-                space: ['house', 'large', 'garden', 'rural']
+                space: ['house', 'large', 'garden', 'rural'],
+                careTime: ['extensive']
             },
             image: 'https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '世界上最聰明的狗狗之一，非常適合喜歡運動和訓練的飼主，需要大量運動和心智刺激。',
@@ -125,7 +132,8 @@ const pets = {
             traits: {
                 personality: ['intelligent', 'social', 'playful', 'active'],
                 lifestyle: ['indoor', 'family', 'social', 'wfh'],
-                space: ['apartment', 'small', 'city', 'studio']
+                space: ['apartment', 'small', 'city', 'studio'],
+                careTime: ['moderate', 'adequate']
             },
             image: 'https://images.pexels.com/photos/1458916/pexels-photo-1458916.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '優雅聰明，不會掉毛，適合過敏體質的家庭，可以適應公寓生活。',
@@ -142,7 +150,8 @@ const pets = {
             traits: {
                 personality: ['friendly', 'playful', 'intelligent', 'social'],
                 lifestyle: ['indoor', 'family', 'relaxed', 'wfh'],
-                space: ['apartment', 'house', 'city', 'balcony']
+                space: ['apartment', 'house', 'city', 'balcony'],
+                careTime: ['moderate', 'adequate']
             },
             image: 'https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '活潑可愛，適合家庭飼養，雖然體型小但精力充沛。',
@@ -161,7 +170,8 @@ const pets = {
             traits: {
                 personality: ['calm', 'gentle', 'independent'],
                 lifestyle: ['indoor', 'relaxed', 'wfh', 'night'],
-                space: ['apartment', 'small', 'studio', 'city']
+                space: ['apartment', 'small', 'studio', 'city'],
+                careTime: ['minimal', 'moderate']
             },
             image: 'https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '性格溫和，適合室內生活的理想寵物。',
@@ -178,7 +188,8 @@ const pets = {
             traits: {
                 personality: ['active', 'intelligent', 'social'],
                 lifestyle: ['indoor', 'busy', 'family', 'social'],
-                space: ['house', 'large', 'compound', 'balcony']
+                space: ['house', 'large', 'compound', 'balcony'],
+                careTime: ['moderate', 'adequate']
             },
             image: 'https://images.pexels.com/photos/1521306/pexels-photo-1521306.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '大型貓咪，活潑好動，需要較大活動空間。',
@@ -195,7 +206,8 @@ const pets = {
             traits: {
                 personality: ['calm', 'gentle', 'independent'],
                 lifestyle: ['indoor', 'relaxed', 'wfh', 'night'],
-                space: ['apartment', 'small', 'studio', 'city']
+                space: ['apartment', 'small', 'studio', 'city'],
+                careTime: ['moderate', 'adequate']
             },
             image: 'https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '性格優雅、安靜，適合室內生活，需要定期梳理毛髮。',
@@ -212,7 +224,8 @@ const pets = {
             traits: {
                 personality: ['active', 'intelligent', 'social', 'curious'],
                 lifestyle: ['indoor', 'busy', 'social', 'night'],
-                space: ['apartment', 'small', 'balcony', 'city']
+                space: ['apartment', 'small', 'balcony', 'city'],
+                careTime: ['moderate']
             },
             image: 'https://images.pexels.com/photos/991831/pexels-photo-991831.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '聰明好動、喜歡與人互動，適應力強，叫聲特別。',
@@ -229,7 +242,8 @@ const pets = {
             traits: {
                 personality: ['calm', 'gentle', 'friendly'],
                 lifestyle: ['indoor', 'relaxed', 'family', 'wfh'],
-                space: ['apartment', 'small', 'studio', 'city']
+                space: ['apartment', 'small', 'studio', 'city'],
+                careTime: ['minimal', 'moderate']
             },
             image: 'https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '性格溫順、親人，適合室內生活，獨特的耳朵形狀非常可愛。',
@@ -246,7 +260,8 @@ const pets = {
             traits: {
                 personality: ['friendly', 'independent', 'gentle'],
                 lifestyle: ['indoor', 'busy', 'wfh', 'night'],
-                space: ['apartment', 'small', 'balcony', 'city']
+                space: ['apartment', 'small', 'balcony', 'city'],
+                careTime: ['minimal', 'moderate']
             },
             image: 'https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '容易相處、適應力強，適合初次養貓的家庭，不太需要特別的照顧。',
@@ -263,7 +278,8 @@ const pets = {
             traits: {
                 personality: ['gentle', 'social', 'friendly', 'calm'],
                 lifestyle: ['indoor', 'family', 'relaxed', 'wfh'],
-                space: ['apartment', 'house', 'city', 'balcony']
+                space: ['apartment', 'house', 'city', 'balcony'],
+                careTime: ['moderate', 'adequate']
             },
             image: 'https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '性格溫順似狗般親人，適合家庭飼養，需要主人的陪伴。',
@@ -280,7 +296,8 @@ const pets = {
             traits: {
                 personality: ['active', 'intelligent', 'curious', 'playful'],
                 lifestyle: ['indoor', 'outdoor', 'athletic', 'social'],
-                space: ['house', 'large', 'garden', 'compound']
+                space: ['house', 'large', 'garden', 'compound'],
+                careTime: ['adequate', 'extensive']
             },
             image: 'https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '外表豹紋華麗，個性活潑好動，需要大量運動和遊戲。',
@@ -297,7 +314,8 @@ const pets = {
             traits: {
                 personality: ['gentle', 'independent', 'social', 'intelligent'],
                 lifestyle: ['indoor', 'outdoor', 'family', 'relaxed'],
-                space: ['house', 'large', 'garden', 'rural']
+                space: ['house', 'large', 'garden', 'rural'],
+                careTime: ['moderate', 'adequate']
             },
             image: 'https://images.pexels.com/photos/1784289/pexels-photo-1784289.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '體型大而優雅，適應力強，喜歡攀爬，需要足夠的活動空間。',
@@ -314,9 +332,10 @@ const pets = {
 
 // 特徵權重設定
 const traitWeights = {
-    personality: 0.4,  // 個性特徵權重 40%
-    lifestyle: 0.35,   // 生活型態權重 35%
-    space: 0.25       // 居住空間權重 25%
+    personality: 0.35,  // 個性特徵權重 35%
+    lifestyle: 0.25,   // 生活型態權重 25%
+    space: 0.20,       // 居住空間權重 20%
+    careTime: 0.20     // 照顧時間權重 20%
 };
 
 // 計算匹配度（含權重）
@@ -379,7 +398,13 @@ function getRelatedTraits(trait) {
         'compound': ['large', 'city'],
         'rural': ['house', 'garden'],
         'city': ['apartment', 'balcony'],
-        'studio': ['small', 'apartment']
+        'studio': ['small', 'apartment'],
+
+        // 照顧時間相關組
+        'minimal': ['moderate'],
+        'moderate': ['minimal', 'adequate'],
+        'adequate': ['moderate', 'extensive'],
+        'extensive': ['adequate']
     };
     
     return relatedTraits[trait] || [];
@@ -436,7 +461,8 @@ function generateAnalysisText(analysis) {
     const categoryNames = {
         personality: '個性特徵',
         lifestyle: '生活型態',
-        space: '居住空間'
+        space: '居住空間',
+        careTime: '照顧時間'
     };
     
     let text = '<div class="trait-analysis">';
@@ -480,7 +506,8 @@ document.getElementById('dnaForm').addEventListener('submit', async function(e) 
     const userTraits = {
         personality: document.getElementById('personality').value,
         lifestyle: document.getElementById('lifestyle').value,
-        space: document.getElementById('space').value
+        space: document.getElementById('space').value,
+        careTime: document.getElementById('careTime').value
     };
 
     // 模擬 AI 運算時間
