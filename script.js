@@ -4,9 +4,9 @@ const pets = {
         {
             name: '拉布拉多',
             traits: {
-                personality: ['active', 'friendly'],
-                lifestyle: ['outdoor', 'relaxed'],
-                space: ['house', 'large']
+                personality: ['active', 'friendly', 'playful', 'social', 'intelligent'],
+                lifestyle: ['outdoor', 'athletic', 'family', 'social'],
+                space: ['house', 'large', 'garden', 'compound']
             },
             image: 'https://images.pexels.com/photos/1118785/pexels-photo-1118785.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '充滿活力、友善的家庭犬，適合有大空間的家庭。',
@@ -21,9 +21,9 @@ const pets = {
         {
             name: '柴犬',
             traits: {
-                personality: ['independent', 'friendly'],
-                lifestyle: ['relaxed', 'indoor'],
-                space: ['apartment', 'small']
+                personality: ['independent', 'protective', 'intelligent', 'curious'],
+                lifestyle: ['indoor', 'relaxed', 'wfh', 'family'],
+                space: ['apartment', 'small', 'balcony', 'city']
             },
             image: 'https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '忠誠獨立，適應力強，適合公寓生活。',
@@ -38,9 +38,9 @@ const pets = {
         {
             name: '吉娃娃',
             traits: {
-                personality: ['active', 'friendly'],
-                lifestyle: ['indoor', 'relaxed'],
-                space: ['apartment', 'small']
+                personality: ['playful', 'social', 'protective'],
+                lifestyle: ['indoor', 'wfh', 'family', 'night'],
+                space: ['apartment', 'small', 'studio', 'city']
             },
             image: 'https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '體型小巧、活潑可愛，適合居住在公寓的寵物犬，非常適合陪伴型的生活方式。',
@@ -55,9 +55,9 @@ const pets = {
         {
             name: '金毛尋回犬',
             traits: {
-                personality: ['friendly', 'active'],
-                lifestyle: ['outdoor', 'relaxed'],
-                space: ['house', 'large']
+                personality: ['friendly', 'gentle', 'intelligent', 'social'],
+                lifestyle: ['outdoor', 'family', 'athletic', 'social'],
+                space: ['house', 'large', 'garden', 'rural']
             },
             image: 'https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '智商高、親人友善，最適合有孩子的家庭，需要較大的活動空間。',
@@ -72,9 +72,9 @@ const pets = {
         {
             name: '臘腸狗',
             traits: {
-                personality: ['active', 'independent'],
-                lifestyle: ['indoor', 'relaxed'],
-                space: ['apartment', 'small']
+                personality: ['curious', 'playful', 'protective'],
+                lifestyle: ['indoor', 'relaxed', 'wfh', 'family'],
+                space: ['apartment', 'small', 'balcony', 'city']
             },
             image: 'https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '體型小巧但性格獨立，適應力強，適合公寓生活，不需要太大的活動空間。',
@@ -89,9 +89,9 @@ const pets = {
         {
             name: '哈士奇',
             traits: {
-                personality: ['active', 'independent'],
-                lifestyle: ['outdoor', 'busy'],
-                space: ['house', 'large']
+                personality: ['active', 'curious', 'playful', 'social'],
+                lifestyle: ['outdoor', 'athletic', 'travel', 'busy'],
+                space: ['house', 'large', 'garden', 'rural']
             },
             image: 'https://images.pexels.com/photos/3715587/pexels-photo-3715587.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '精力充沛、活潑好動，需要大量運動，適合有大院子的家庭。',
@@ -108,9 +108,9 @@ const pets = {
         {
             name: '英國短毛貓',
             traits: {
-                personality: ['calm', 'friendly'],
-                lifestyle: ['indoor', 'relaxed'],
-                space: ['apartment', 'small']
+                personality: ['calm', 'gentle', 'independent'],
+                lifestyle: ['indoor', 'relaxed', 'wfh', 'night'],
+                space: ['apartment', 'small', 'studio', 'city']
             },
             image: 'https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '性格溫和，適合室內生活的理想寵物。',
@@ -125,9 +125,9 @@ const pets = {
         {
             name: '緬因貓',
             traits: {
-                personality: ['active', 'independent'],
-                lifestyle: ['indoor', 'busy'],
-                space: ['house', 'large']
+                personality: ['active', 'intelligent', 'social'],
+                lifestyle: ['indoor', 'busy', 'family', 'social'],
+                space: ['house', 'large', 'compound', 'balcony']
             },
             image: 'https://images.pexels.com/photos/1521306/pexels-photo-1521306.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '大型貓咪，活潑好動，需要較大活動空間。',
@@ -142,9 +142,9 @@ const pets = {
         {
             name: '波斯貓',
             traits: {
-                personality: ['calm', 'independent'],
-                lifestyle: ['indoor', 'relaxed'],
-                space: ['apartment', 'small']
+                personality: ['calm', 'gentle', 'independent'],
+                lifestyle: ['indoor', 'relaxed', 'wfh', 'night'],
+                space: ['apartment', 'small', 'studio', 'city']
             },
             image: 'https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '性格優雅、安靜，適合室內生活，需要定期梳理毛髮。',
@@ -159,9 +159,9 @@ const pets = {
         {
             name: '暹羅貓',
             traits: {
-                personality: ['active', 'friendly'],
-                lifestyle: ['indoor', 'busy'],
-                space: ['apartment', 'small']
+                personality: ['active', 'intelligent', 'social', 'curious'],
+                lifestyle: ['indoor', 'busy', 'social', 'night'],
+                space: ['apartment', 'small', 'balcony', 'city']
             },
             image: 'https://images.pexels.com/photos/991831/pexels-photo-991831.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '聰明好動、喜歡與人互動，適應力強，叫聲特別。',
@@ -176,9 +176,9 @@ const pets = {
         {
             name: '蘇格蘭摺耳貓',
             traits: {
-                personality: ['calm', 'friendly'],
-                lifestyle: ['indoor', 'relaxed'],
-                space: ['apartment', 'small']
+                personality: ['calm', 'gentle', 'friendly'],
+                lifestyle: ['indoor', 'relaxed', 'family', 'wfh'],
+                space: ['apartment', 'small', 'studio', 'city']
             },
             image: 'https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '性格溫順、親人，適合室內生活，獨特的耳朵形狀非常可愛。',
@@ -193,9 +193,9 @@ const pets = {
         {
             name: '美國短毛貓',
             traits: {
-                personality: ['friendly', 'independent'],
-                lifestyle: ['indoor', 'busy'],
-                space: ['apartment', 'small']
+                personality: ['friendly', 'independent', 'gentle'],
+                lifestyle: ['indoor', 'busy', 'wfh', 'night'],
+                space: ['apartment', 'small', 'balcony', 'city']
             },
             image: 'https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?auto=compress&cs=tinysrgb&w=400',
             description: '容易相處、適應力強，適合初次養貓的家庭，不太需要特別的照顧。',
@@ -220,14 +220,67 @@ const traitWeights = {
 // 計算匹配度（含權重）
 function calculateCompatibility(userTraits, petTraits) {
     let weightedScore = 0;
-
+    
     for (let category in userTraits) {
+        // 檢查寵物是否擁有使用者選擇的特徵
         if (petTraits[category].includes(userTraits[category])) {
             weightedScore += traitWeights[category];
+        } else {
+            // 如果沒有完全匹配，檢查是否有相關特徵
+            const relatedTraits = getRelatedTraits(userTraits[category]);
+            for (let trait of relatedTraits) {
+                if (petTraits[category].includes(trait)) {
+                    weightedScore += traitWeights[category] * 0.5; // 相關特徵給予一半權重
+                    break;
+                }
+            }
         }
     }
 
     return weightedScore * 100; // 轉換為百分比
+}
+
+// 取得相關特徵
+function getRelatedTraits(trait) {
+    const relatedTraits = {
+        // 個性特徵相關組
+        'active': ['playful', 'social'],
+        'calm': ['gentle', 'independent'],
+        'friendly': ['social', 'playful'],
+        'independent': ['curious', 'protective'],
+        'playful': ['active', 'social'],
+        'gentle': ['calm', 'friendly'],
+        'curious': ['playful', 'intelligent'],
+        'protective': ['independent', 'intelligent'],
+        'intelligent': ['curious', 'social'],
+        'social': ['friendly', 'playful'],
+        
+        // 生活型態相關組
+        'busy': ['social', 'athletic'],
+        'relaxed': ['family', 'wfh'],
+        'outdoor': ['athletic', 'travel'],
+        'indoor': ['wfh', 'night'],
+        'athletic': ['outdoor', 'social'],
+        'social': ['busy', 'family'],
+        'travel': ['outdoor', 'busy'],
+        'wfh': ['indoor', 'relaxed'],
+        'family': ['relaxed', 'social'],
+        'night': ['indoor', 'wfh'],
+        
+        // 居住空間相關組
+        'apartment': ['small', 'studio'],
+        'house': ['large', 'garden'],
+        'small': ['apartment', 'studio'],
+        'large': ['house', 'compound'],
+        'garden': ['house', 'rural'],
+        'balcony': ['apartment', 'city'],
+        'compound': ['large', 'city'],
+        'rural': ['house', 'garden'],
+        'city': ['apartment', 'balcony'],
+        'studio': ['small', 'apartment']
+    };
+    
+    return relatedTraits[trait] || [];
 }
 
 // 進階特徵分析
@@ -235,10 +288,16 @@ function analyzeTraitCompatibility(userTraits, petTraits) {
     const analysis = {};
     
     for (let category in userTraits) {
+        const exactMatch = petTraits[category].includes(userTraits[category]);
+        const relatedMatch = !exactMatch && getRelatedTraits(userTraits[category])
+            .some(trait => petTraits[category].includes(trait));
+            
         analysis[category] = {
-            match: petTraits[category].includes(userTraits[category]),
+            match: exactMatch,
+            relatedMatch: relatedMatch,
             weight: traitWeights[category],
-            score: petTraits[category].includes(userTraits[category]) ? traitWeights[category] * 100 : 0
+            score: exactMatch ? traitWeights[category] * 100 : 
+                   relatedMatch ? traitWeights[category] * 50 : 0
         };
     }
     
