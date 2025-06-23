@@ -102,6 +102,57 @@ const pets = {
                 health: '定期體檢和疫苗注射，注意關節和皮膚健康',
                 training: '聰明但有時候獨立性強，需要耐心和時間訓練'
             }
+        },
+        {
+            name: '邊境牧羊犬',
+            traits: {
+                personality: ['intelligent', 'active', 'social', 'protective'],
+                lifestyle: ['outdoor', 'athletic', 'family', 'social'],
+                space: ['house', 'large', 'garden', 'rural']
+            },
+            image: 'https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&w=400',
+            description: '世界上最聰明的狗狗之一，非常適合喜歡運動和訓練的飼主，需要大量運動和心智刺激。',
+            careGuide: {
+                feeding: '每天2-3餐，體重20kg的成犬每天約需要300-400g的飼料',
+                exercise: '每天需要2-3小時的高強度運動和訓練',
+                grooming: '每週梳理2-3次，特別是在換毛期間',
+                health: '定期體檢和疫苗注射，注意髖關節和眼睛健康',
+                training: '極易訓練，需要大量的心智刺激活動'
+            }
+        },
+        {
+            name: '貴賓狗',
+            traits: {
+                personality: ['intelligent', 'social', 'playful', 'active'],
+                lifestyle: ['indoor', 'family', 'social', 'wfh'],
+                space: ['apartment', 'small', 'city', 'studio']
+            },
+            image: 'https://images.pexels.com/photos/1458916/pexels-photo-1458916.jpeg?auto=compress&cs=tinysrgb&w=400',
+            description: '優雅聰明，不會掉毛，適合過敏體質的家庭，可以適應公寓生活。',
+            careGuide: {
+                feeding: '每天2-3餐，根據體型大小調整份量',
+                exercise: '每天需要30-60分鐘的運動',
+                grooming: '需要定期專業美容，6-8週修剪一次',
+                health: '定期檢查牙齒和眼睛，注意膝蓋問題',
+                training: '聰明易教，適合各種訓練項目'
+            }
+        },
+        {
+            name: '柯基犬',
+            traits: {
+                personality: ['friendly', 'playful', 'intelligent', 'social'],
+                lifestyle: ['indoor', 'family', 'relaxed', 'wfh'],
+                space: ['apartment', 'house', 'city', 'balcony']
+            },
+            image: 'https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=400',
+            description: '活潑可愛，適合家庭飼養，雖然體型小但精力充沛。',
+            careGuide: {
+                feeding: '每天2餐，體重12kg的成犬每天約需要240-280g的飼料',
+                exercise: '每天需要45-60分鐘的運動',
+                grooming: '每週刷毛2-3次，定期清理耳朵',
+                health: '注意體重控制，預防背部問題',
+                training: '聰明但有時固執，需要耐心訓練'
+            }
         }
     ],
     cats: [
@@ -205,6 +256,57 @@ const pets = {
                 grooming: '每週梳理1次，定期清潔耳朵和牙齒',
                 health: '定期體檢和疫苗注射，注意體重和牙齒健康',
                 training: '適度訓練使用貓砂盆和抓板，性格友善易於訓練'
+            }
+        },
+        {
+            name: '布偶貓',
+            traits: {
+                personality: ['gentle', 'social', 'friendly', 'calm'],
+                lifestyle: ['indoor', 'family', 'relaxed', 'wfh'],
+                space: ['apartment', 'house', 'city', 'balcony']
+            },
+            image: 'https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&w=400',
+            description: '性格溫順似狗般親人，適合家庭飼養，需要主人的陪伴。',
+            careGuide: {
+                feeding: '每天2-3餐，成貓每天約需要80-100g的飼料',
+                exercise: '需要適度玩耍和互動',
+                grooming: '長毛需要每天梳理，定期清潔眼睛',
+                health: '注意心臟和腎臟健康，定期體檢',
+                training: '容易訓練，喜歡學習簡單技巧'
+            }
+        },
+        {
+            name: '孟加拉豹貓',
+            traits: {
+                personality: ['active', 'intelligent', 'curious', 'playful'],
+                lifestyle: ['indoor', 'outdoor', 'athletic', 'social'],
+                space: ['house', 'large', 'garden', 'compound']
+            },
+            image: 'https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=400',
+            description: '外表豹紋華麗，個性活潑好動，需要大量運動和遊戲。',
+            careGuide: {
+                feeding: '每天2-3餐，注意肉類蛋白質的攝入',
+                exercise: '需要豐富的遊戲環境和運動機會',
+                grooming: '每週刷毛1-2次，皮毛容易護理',
+                health: '注意心臟健康，定期驅蟲',
+                training: '聰明好學，可以學習多種技巧'
+            }
+        },
+        {
+            name: '挪威森林貓',
+            traits: {
+                personality: ['gentle', 'independent', 'social', 'intelligent'],
+                lifestyle: ['indoor', 'outdoor', 'family', 'relaxed'],
+                space: ['house', 'large', 'garden', 'rural']
+            },
+            image: 'https://images.pexels.com/photos/1784289/pexels-photo-1784289.jpeg?auto=compress&cs=tinysrgb&w=400',
+            description: '體型大而優雅，適應力強，喜歡攀爬，需要足夠的活動空間。',
+            careGuide: {
+                feeding: '每天2-3餐，成貓每天約需要80-120g的飼料',
+                exercise: '喜歡攀爬，需要垂直空間',
+                grooming: '長毛需要每週梳理2-3次',
+                health: '注意口腔和心臟健康',
+                training: '可以學習基本指令，性格獨立'
             }
         }
     ]
